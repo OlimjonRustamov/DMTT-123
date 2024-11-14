@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DMTT123" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorPrimary">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="app_background_color">@color/white</item>
+        <item name="app_text_color">@color/black</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerTheme</item>
+    </style>
+
+    <style name="FullScreenDialogTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="@style/ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorSecondary">@color/app_blue</item>
+        <item name="colorPrimary">@color/app_blue</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/checkListMenu"
+        android:icon="@drawable/ic_check_list"
+        android:title="@string/check_list" />
+    <item
+        android:id="@+id/childrenListMenu"
+        android:icon="@drawable/ic_children_list"
+        android:title="@string/children_list" />
+    <item
+        android:id="@+id/addChildMenu"
+        android:icon="@drawable/ic_add_child"
+        android:title="@string/add_child" />
+    <item
+        android:id="@+id/invoiceGeneratorMenu"
+        android:icon="@drawable/ic_invoice_generator"
+        android:title="@string/invoice" />
+</menu>

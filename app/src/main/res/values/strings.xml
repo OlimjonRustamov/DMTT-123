@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DMTT 123</string>
+    <string name="children_list">Bolalar ro\'yxati</string>
+    <string name="invoice">Kvitansiya</string>
+    <string name="invoice_generator">Kvitansiya yaratish</string>
+    <string name="add_child">Bola qo\'shish</string>
+    <string name="child_full_name">Ism-Familiya</string>
+    <string name="child_id">ID</string>
+    <string name="save">Saqlash</string>
+    <string name="empty_data">Ma\'lumotlar to\'liq emas</string>
+    <string name="year">Yil</string>
+    <string name="_2024">2024</string>
+    <string name="month">Oy</string>
+    <string name="_248_000_som">248 000 so\'m</string>
+    <string name="id_x">ID: %1$s</string>
+    <string name="share">Ulashish</string>
+    <string name="deleted">O\'chirildi</string>
+    <string name="check_list">Davomat</string>
+</resources>
