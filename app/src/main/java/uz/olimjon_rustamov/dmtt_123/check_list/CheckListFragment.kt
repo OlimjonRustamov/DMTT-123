@@ -91,8 +91,10 @@ class CheckListFragment : Fragment() {
     }
 
     private fun loadChildrenList() {
-        binding.rvChildren.visibility = View.INVISIBLE
-        binding.progressBar.visibility = View.VISIBLE
+        try {
+            binding.rvChildren.visibility = View.INVISIBLE
+            binding.progressBar.visibility = View.VISIBLE
+        } catch (_: Exception) { }
 
         checkListRef.child(currentDate).get().addOnSuccessListener { snapshot ->
 

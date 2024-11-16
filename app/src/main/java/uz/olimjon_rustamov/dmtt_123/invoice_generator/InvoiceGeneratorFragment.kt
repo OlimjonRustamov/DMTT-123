@@ -23,6 +23,10 @@ import uz.olimjon_rustamov.dmtt_123.R
 import uz.olimjon_rustamov.dmtt_123.databinding.FragmentInvoiceGeneratorBinding
 import uz.olimjon_rustamov.dmtt_123.invoice_generator.SelectChildDF.Companion.showSelectChildDF
 import uz.olimjon_rustamov.dmtt_123.model.Child
+import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.util.Date
+import java.util.Locale
 
 
 class InvoiceGeneratorFragment : Fragment() {
@@ -50,6 +54,7 @@ class InvoiceGeneratorFragment : Fragment() {
                 binding.invoiceIv.setImageBitmap(generateImage())
             }
         }
+        binding.yearEt.setText(LocalDate.now().year)
         viewLifecycleOwner.lifecycleScope.launch {
             binding.yearEt.addTextChangedListener {
                 onTextChanged()
@@ -68,7 +73,9 @@ class InvoiceGeneratorFragment : Fragment() {
             }
             //share image
             val path = MediaStore.Images.Media.insertImage(requireActivity().contentResolver, bitmap,"Invoice Student name", null);
-            val bitmapUri = Uri.parse(path);
+            val bitmapUri = try {
+                Uri.parse(path)
+            } catch (_: Exception) { null }
             val shareIntent = Intent(Intent.ACTION_SEND).apply {
                 type = "image/*"
                 putExtra(Intent.EXTRA_STREAM, bitmapUri)
