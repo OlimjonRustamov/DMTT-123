@@ -54,7 +54,7 @@ class InvoiceGeneratorFragment : Fragment() {
                 binding.invoiceIv.setImageBitmap(generateImage())
             }
         }
-        binding.yearEt.setText(LocalDate.now().year)
+        binding.yearEt.setText(LocalDate.now().year.toString())
         viewLifecycleOwner.lifecycleScope.launch {
             binding.yearEt.addTextChangedListener {
                 onTextChanged()
